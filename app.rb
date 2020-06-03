@@ -22,4 +22,5 @@ class App < Sinatra::Base
   get '/goodbye/:name1/:name2' do
     @username1 = params[:name1]
     @username2 = params[:name2]
+  end
 end
