@@ -18,4 +18,8 @@ class App < Sinatra::Base
     @user_name = params[:name]
     "Goodbye, #{@user_name}."
   end
+  
+  get '/goodbye/:name1/:name2' do
+    @username1 = params[:name1]
+    @username2 = params[:name2]
 end
